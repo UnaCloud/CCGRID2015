@@ -14,7 +14,7 @@ public class ProbadorMain{
 			for(int e=start;e<=PM_CORES;e++){
 				System.out.println(e);
 				ExecutorService exec=Executors.newFixedThreadPool(e);
-				Prueba p=new Prueba(e,5,110000L);
+				Prueba p=new Prueba(e,60,110000L);
 				for(int j=0;j<p.pruebas.length;j++)p.futures[j]=exec.submit(p.pruebas[j]);
 				for(int j=0;j<p.pruebas.length;j++)p.futures[j].get();
 				exec.shutdown();

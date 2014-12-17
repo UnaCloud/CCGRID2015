@@ -105,14 +105,7 @@ public class ProcesadorResultados {
 	}
 	static File root=new File("D:\\Trabajo\\201420\\Papers\\CCGrid2015\\Wayra");
 	public static void main(String[] args) {
-		/*for(int e=15;e<40;e+=5){
-			System.out.println("4770-nointr"+e);
-			processFile(new File(root,"4770-nointr"+e+".csv"));
-			
-		}
-		System.out.println("4770-preferencias");
-		processFile(new File(root,"4770-preferencias.csv"));*/
 		System.out.println("4770-siempre");
-		processFile(new File(root,"sinboinc.csv"));
+		processFile(new File("E:\\GitHub\\CCGRID2015\\Wayra\\4770-siempre.csv"));
 	}
 }
